@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Compras</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <!-- Encabezado como logo e identificador -->
+    <header class="logo">
+        <a href=""><img src="css/logo.png" alt="" id="logo"></a>
+    </header><br>
+    <!-- Barra de navegacion -->
+    <nav class="barra">
+        <ul>
+            <li><a href="index.html"><b>INICIO</b></a></li>
+            <li><a href="index.html"><b>EXHIBICION</b></a></li>
+            <li><a href="pedido.html"><b>COMPRAS</b></a></li>
+            <li><a href="#contacto"><b>CONTACTO</b></a></li>
+            <li><a href="intregrates.html"><b>INTEGRANTES</b></a></li>
+        </ul>
+    </nav><br>
+    <!-- Seccion de compras de productos -->
+        <form id="jeansForm">
+            <div class="container-form">
+                <div class="container-pedido">
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 7.58.11 PM.jpeg" alt="" width="150" height="100">
+                        <div>
+                            <h4>Pantalon vaquero</h4>
+                            <p>$45000</p>
+                            <input type="number" class="number" id="va" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 7.58.58 PM.jpeg" alt="" width="150" height="100">
+                        <div>
+                            <h4>Jeans entubados</h4>
+                            <p>$43000</p>
+                            <input type="number" class="number" id="en" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 8.00.00 PM.jpeg" alt="" width="150" height="100">
+                        <div>
+                            <h4>Blusa de tela</h4>
+                            <p>$51000</p>
+                            <input type="number" class="number" id="te" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 8.00.03 PM.jpeg" alt="" width="150"
+                            height="100">
+                        <div>
+                            <h4>Jeans de campana</h4>
+                            <p>$46000</p>
+                            <input type="number" class="number" id="ca" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 8.03.23 PM.jpeg" alt="" width="150" height="100">
+                        <div>
+                            <h4>Jeans clasicos</h4>
+                            <p>$43000</p>
+                            <input type="number" class="number" id="cl" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="Img/WhatsApp Image 2024-10-13 at 8.00.09 PM.jpeg" alt="" width="150" height="100">
+                        <div>
+                            <h4>Combo Blusa/Short</h4>
+                            <p>$76000</p>
+                            <input type="number" class="number" id="co" value="0" min="0"
+                                onchange="agregarAlCarrito()">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div style="background-color: white;">
+                        <h3 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Carrito de Compras</h3>
+                        <ul id="carrito"></ul>
+                        <h4 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Total: $<span id="total">0.00</span></h4>
+                    </div>
+                    <div>
+                        <button type="button" class="button" onclick="solicitarPedido()">Solicitar Pedido</button>
+                        <button type="button" class="button" onclick="limpiarCarrito()">Limpiar Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <script src="js/carrito.js"></script>
+    </main>
+    <footer>
+    <!-- Contacto -->
+        <section id="contacto">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">¡Contáctanos!</h1>
+            <p style="padding-left: 10%; padding-right: 10%;">En Instagram y TikTok nos encuentras como <b>@qrjeansoficial</b>, donde compartimos contenido exclusivo,
+                consejos de moda, promociones especiales y muestras de nuestros productos más populares. Síguenos para estar
+                al tanto de todas nuestras novedades y participar en sorteos y concursos.</p>
+            <div>
+                <h4>Teléfono</h4>
+                <p>+57 3113905909</p>
+            </div>
+            <div>
+                <h4>Redes Sociales</h4>
+                <p><a href="https://www.tiktok.com/@qrjeansoficial" target="_blank">TikTok</a> | <a href="https://www.instagram.com/qrjeansoficial/" target="_blank">Instagram</a> | <a href="https://l.instagram.com/?u=https%3A%2F%2Fwa.link%2Fo7iwtk%3Ffbclid%3DPAZXh0bgNhZW0CMTEAAaaDnpbYfibCm5xmLmawiUTncYW8yaIiyh-DCMPAPNbNhEEWd-VQpeWoUkw_aem_2lAQolMNd9lY3BjhanPevw&e=AT3pDQPyunAdeL4QyR0kJFAAShEFw9zJK5HpSve-_5q1CxqjkYDVak7o9KsZn90a4hF7OjJhBiT9rZnj1vwnZ0hCusqdiuoLVIKmKA" target="_blank">WhatsApp</a></p>
+            </div>
+        </section>
+        <p>&copy; 2024 Qr Jeans Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

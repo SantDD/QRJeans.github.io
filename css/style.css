@@ -1,0 +1,167 @@
+/* Fondo de la pagina web */
+body {
+    background-size: cover;
+    background-position: center center;
+    background-clip: border-box;
+    height: 100%;
+    background-image: url("Diseño\ sin\ título.png");
+}
+
+/* Especificacaciones del encabezado */
+.logo {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-style: solid;
+    border-color: #AF9476;
+    border-width: 10px;
+}
+
+/* Tamaño de imagen */
+#logo {
+    height: 100px;
+}
+
+/* Posicionamiento de la barra y visual */
+.barra {
+    background-color: #AF9476;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+/* Direccion de la lista */
+.barra ul {
+    list-style: none;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+/* Cambios visuales de los vinculos de la barra */
+.barra a {
+    text-decoration: none;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+}
+
+/* Cambios visuales al tener el cursor encima */
+.barra a:hover {
+    color: darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+}
+
+/* Parrafo de inicio */
+
+.Parrafo {
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white;
+}
+
+/* Menu de compras */
+
+.container-productos {
+    display: grid;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: calc(100vh - 180px);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.container-pedido {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    justify-content: center;
+}
+
+.container-form {
+    display: grid;
+    margin: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+}
+
+
+.card img {
+    max-width: 75%;
+    height: auto;
+    justify-content: center;
+}
+
+.titulo {
+    background-color: #AF9476;
+    height: 140px;
+    align-content: center;
+    text-align: center;
+    color: white;
+    justify-content: center;
+}
+
+.titulo h2 {
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+}
+
+.card-title a {
+    text-decoration: none;
+    color: #AF9476;
+}
+
+.card-title a:hover {
+    color: darkgoldenrod;
+    background-color: lightgoldenrodyellow;
+}
+
+h5{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Contacto */
+
+footer {
+    background-color: #AF9476;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    border-top: 2px solid #AF9476;
+    width: 100%;
+}
+
+footer h4,
+footer p,
+footer a {
+    color: white;
+}
+
+footer a:hover {
+    color: darkgoldenrod;
+}
+
+
